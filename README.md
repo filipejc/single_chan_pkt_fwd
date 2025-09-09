@@ -1,3 +1,21 @@
+## Notes to install ##
+# problem with Wiring pi
+Need to install the Wiring Pi.
+
+```bash
+cd ~ && git clone https://github.com/WiringPi/WiringPi.git
+cd WiringPi && ./build
+```
+
+Enable SPI
+```bash
+sudo raspi-config
+```
+
+Enable SPI in the Interface options.
+
+
+
 *** IMPORTANT ***
 
 Please note this repository is deprecated, and the code is not up-to-date to use on The Things Network.
