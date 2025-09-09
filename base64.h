@@ -47,6 +47,10 @@ int b64_to_bin_nopad(const char * in, int size, uint8_t * out, int max_len);
 
 /* === derivative functions === */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
 @brief Encode binary data in Base64 string (with added padding)
 */
@@ -56,6 +60,10 @@ int bin_to_b64(const uint8_t * in, int size, char * out, int max_len);
 @brief Decode Base64 string to binary data (remove padding if necessary)
 */
 int b64_to_bin(const char * in, int size, uint8_t * out, int max_len);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 
